@@ -1,0 +1,158 @@
+.job {
+	width: 100%;
+	border: 1px solid $border-dark;
+	@include border-radius(4px);
+	padding: 20px 0 0 0;
+	margin: 0 0 18px 0;
+
+	@media #{$desktop} {
+		float: right;
+		width: 49%;
+
+		&:nth-child(2n) {
+			float: left;
+		}
+
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 24px;
+		margin: 0 0 15px 20px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0 20px 25px 20px;
+
+		@media #{$desktop} {
+			width: 60%;
+			float: left;
+		}
+
+	}
+
+	.kids {
+		margin: 0 0 0 20px;
+		width: 100%;
+
+		@media #{$desktop} {
+			margin: 0 0 15px 0;
+			width: 28%;
+			float: right;
+		}
+
+		li {
+			margin: 0 20px 10px 0;
+			float: left;
+			display: inline-block;
+
+			@media #{$desktop} {
+				margin: 0 0 10px 0;
+				float: none;
+				display: block;
+			}
+
+		}
+
+		strong {
+			font-size: 14px;
+			line-height: 24px;
+
+			@media #{$desktop} {
+				font-size: 18px;
+				line-height: 44px;
+				float: left;
+				display: inline-block;
+			}
+
+		}
+
+	}
+
+	.kid {
+		float: left;
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		@include border-radius(24px);
+		text-align: center;
+
+		@media #{$desktop} {
+			margin-right: 15px;
+			width: 44px;
+			height: 44px;
+			@include border-radius(44px);
+		}
+
+		.fa-user {
+			font-size: 24px;
+			line-height: 30px;
+
+			@media #{$desktop} {
+				font-size: 34px;
+				line-height: 64px;
+			}
+
+		}
+
+	}
+
+	.time {
+		position: relative;
+		margin: 15px 0 0 0;
+		padding: 15px;
+		clear: left;
+		background: $light-green;
+		@include border-bottom-left-radius(4px);
+		@include border-bottom-right-radius(4px);
+		font-size: 14px;
+		line-height: 19px;
+		color: $muted-color;
+		clear: both;
+
+		@media #{$desktop} {
+			font-size: 19px;
+			line-height: 24px;
+		}
+
+		.time-details {
+			position: relative;
+			width: 130px;
+			float: left;
+			padding-left: 30px;
+
+			@media #{$desktop} {
+				width: 150px;
+				padding-left: 50px;
+			}
+
+			i {
+				position: absolute;
+				top: 2px;
+				left: 0;
+				font-size: 24px;
+				color: $primary-color;
+
+				@media #{$desktop} {
+					font-size: 34px;
+				}
+
+			}
+
+			strong {
+				font-weight: bold;
+				display: block;
+				color: $primary-color;
+			}
+
+		}
+
+		.button {
+			float: right;
+		}
+
+	}
+
+}

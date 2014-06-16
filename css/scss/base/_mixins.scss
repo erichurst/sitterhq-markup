@@ -1,0 +1,79 @@
+@mixin image-2x($image, $width, $height) {
+	@media (min--moz-device-pixel-ratio: 1.3),
+				(-o-min-device-pixel-ratio: 2.6/2),
+				(-webkit-min-device-pixel-ratio: 1.3),
+				(min-device-pixel-ratio: 1.3),
+				(min-resolution: 1.3dppx) {
+		/* on retina, use image that's scaled by 2 */
+		background-image: url($image);
+		background-size: $width $height;
+		width: $width;
+	}
+}
+
+@mixin ease-links {
+	@include transition-property(all);
+	@include transition-duration(.15s);
+	@include transition-timing-function(ease-in);
+}
+
+@mixin photo-style {
+	border: 1px solid #fff;
+	@include box-shadow(1px 1px 5px rgba(#000,.2));
+	@include border-radius(1px);
+}
+
+@mixin button($color: #fff, $background: $green) {
+	border: none;
+	@include border-radius(2px);
+	@include box-shadow(1px 1px 1px rgba(#000,.8));
+	background: $background;
+	padding: 9px 15px;
+	text-align: center;
+	color: $color;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	@include ease-links();
+	position: relative;
+	-webkit-appearance: none;
+
+	&:hover {
+		background: darken($green,10%);
+	}
+
+	@media #{$desktop} {
+		font-size: 24px;
+		line-height: 24px;
+		padding: 15px 25px;
+	}
+
+}
+
+@mixin button-alt($color: #fff, $padding: 8px 15px) {
+	background: #fff;
+	border: 2px solid $color;
+	padding: $padding;
+	text-align: center;
+	color: $color;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	@include ease-links();
+	position: relative;
+	-webkit-appearance: none;
+
+	&:hover {
+		border-color: darken($color,20%);
+		color: darken($color,20%);
+	}
+
+	@media #{$desktop} {
+		font-size: 24px;
+		line-height: 24px;
+		padding: 15px 25px;
+	}
+ 
+}

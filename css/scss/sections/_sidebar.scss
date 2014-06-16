@@ -1,0 +1,107 @@
+.sb-left {
+	width: 250px;
+	color: #fff;
+	text-align: center;
+
+	@media #{$desktop} {
+		width: 365px;
+	}
+
+	.user {
+		width: 200px;
+		padding: 25px;
+
+		@media #{$desktop} {
+			width: 315px;
+		}
+
+		li {
+			float: left;
+			display: inline;
+			text-align: left;
+		}
+
+		img {
+			@include photo-style();
+			margin-right: 25px;
+		}
+
+		h2 {
+			width: 140px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-weight: 700;
+		}
+
+		h3 {
+			color: $teal;
+			width: 140px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-weight: 700;
+		}
+
+	}
+
+	.actions-tray {
+		margin-bottom: 65px;
+
+		a {
+			text-align: left;
+			color: $teal;
+			font-size: 16px;
+			line-height: 16px;
+			display: block;
+			border-bottom: 1px solid $border-dark;
+			padding: 15px 25px 22px 25px;
+			margin: 0 0 10px 0;
+		}
+
+		i {
+			width: 25px;
+			color: $border-dark;
+			font-size: 22px;
+			line-height: 22px;
+			margin: 0 10px 0 0;
+			vertical-align: middle;
+		}
+
+		.button {
+			margin: 0 auto;
+		}
+
+	}
+
+	.fa-cog {
+		position: absolute;
+		top: 35px;
+		right: 25px;
+		color: $border-dark;
+		font-size: 28px;
+		line-height: 28px;
+
+		&:hover {
+			color: lighten($border-dark,50%);
+		}
+
+	}
+
+	.button {
+		margin-bottom: 45px;
+	}
+
+	.promo {
+		display: none;
+
+		@media #{$desktop} {
+			float: none;
+			display: block;
+			width: 330px;
+			margin: 0 auto 25px auto;
+		}
+
+	}
+
+}

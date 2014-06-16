@@ -1,0 +1,32 @@
+.button {
+	@include button(#fff);
+
+	i {
+		margin-right: 15px;
+	}
+
+	.fa-envelope-o {
+		margin-right: 5px;
+	}
+
+}
+
+.button-alt {
+	@include button-alt($teal);
+
+	.wrap-parent & {
+		@include button-alt (#4a4a4a);
+	}
+
+	.wrap-sitter & {
+		padding-right: 40px;
+	}
+
+	.sprites-bookmarked-small {
+		position: absolute;
+		top: -5px;
+		right: 5px;
+		display: inline-block;
+	}
+
+}

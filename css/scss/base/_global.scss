@@ -1,0 +1,241 @@
+body {
+	font: $main-font;
+	color: $main-font-color;
+	background-color: #fff;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: 100%;
+}
+
+html, body, #wrap { 
+	min-height: 100%; 
+	width: 100%; 
+	height: 100%; 
+	overflow-x: hidden; 
+}
+
+html>body, 
+html>body #wrap { 
+	height: auto; 
+}
+
+#wrap { 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+}
+
+#container {
+	position: relative;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0 200px 0;
+	overflow-x: hidden;
+}
+
+.main {
+	@extend .centered;
+	margin-top: $content-padding;
+}
+
+h2.title {
+	font-size: 16px;
+	line-height: 16px;
+	color: $primary-color;
+	margin: 0 0 25px 0;
+
+	@media #{$desktop} {
+		font-size: 26px;
+		line-height: 26px;
+	}
+
+	&.centered {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+		@media #{$desktop} {
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+		}
+
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	i {
+		color: $teal;
+		margin: 0 20px 0 10px;
+	}
+
+	p {
+		margin: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: $girl;
+	}
+
+}
+
+hr {
+	width: 100%;
+	height: 1px;
+	border: none;
+	background: $border-dark;
+	margin: 0 0 35px 0;
+
+	&:before {
+		height: 1px;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: -9999px;
+		right: 0;
+		border-left: 9999px solid $border-dark;
+		box-shadow: 9999px 0 0 $border-dark;
+	}
+
+}
+
+.more {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: $green;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.centered {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	//background: #000;
+
+	@media #{$tablet} {
+		width: 75%;
+	}
+
+	@media #{$desktop} {
+		width: $full;
+	}
+
+}
+
+.sprites-logo-small {
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.kids {
+	margin: 0 auto;
+
+	.kid {
+		background: $gray;
+		position: relative;
+		display: inline-block;
+
+		.fa-user {
+			color: #fff;
+			display: inline-block;
+		}
+
+		&.boy {
+			background: $boy;
+		}
+
+		&.girl {
+			background: $girl;
+		}
+
+	}
+
+}
+
+.sitter-list {
+	margin: 20px auto;
+	position: relative;
+
+	li {
+		width: 50%;
+		float: left;
+		display: inline-block;
+		padding-bottom: 23px;
+		position: relative;
+		text-align: center;
+
+		a {
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+		}
+
+		img {
+			width: 100%;
+			@include photo-style;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 13px;
+			line-height: 20px;
+			width: 86%;
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			text-align: left;
+			padding: 15px 8%;
+
+			strong {
+				font-weight: 700;
+				display: block;
+			}
+
+			.age {
+				position: absolute;
+				top: 15px;
+				right: 8%;
+
+				@media #{$desktop} {
+					right: 6%;
+				}
+
+			}
+
+		}
+
+		@media #{$desktop} {
+			width: auto;
+			float: none;
+			margin: 0 24px 24px 0;
+			padding-bottom: 0;
+			text-align: left;
+
+			h2 {
+				font-size: $main-font-size;
+				width: 88%;
+				padding: 15px 6%;
+			}
+
+			&:nth-child(4n+4) {
+				margin-right: 0;
+			}
+
+		}
+
+	}
+
+}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }

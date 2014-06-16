@@ -1,0 +1,200 @@
+input {
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	display: none;
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+	margin: 0; 
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=date],
+textarea {
+	border: none;
+	@include box-shadow(inset 0 0 0 1px #ccc);
+	padding: 12px 12px 11px 12px;
+	font-size: 14px;
+	line-height: 14px;
+	color: $primary-color;
+	width: 97%;
+	outline: none;
+
+	@media #{$desktop} {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+}
+
+textarea {
+	min-height: 200px;
+}
+
+.data-form {
+	width: 93%;
+
+	@media #{$desktop} {
+		width: 80%;
+	}
+
+	label {
+		display: block;
+		color: darken($gray,10%);
+		font-size: 80%;
+		font-weight: bold;
+	}
+
+	p {
+		margin: 25px 0;
+
+		&.legal {
+			font-size: 90%;
+			color: lighten($primary-color,10%);
+			margin: 25px 0;
+
+			@media #{$desktop} {
+				margin: 35px 0;
+			}
+
+		}
+
+	}
+
+}
+
+.file-upload {
+
+	label {
+		margin-bottom: 5px;
+	}
+
+	img {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+
+	input[type=file] {
+		color: transparent;
+		cursor: pointer;
+
+		&::-webkit-file-upload-button {
+			visibility: hidden;
+		}
+
+		&::before {
+			content: 'Change photo';
+			display: inline-block;
+			@extend .button;
+			outline: none;
+			white-space: nowrap;
+			-webkit-user-select: none;
+			cursor: pointer;
+			padding: 10px 15px !important;
+			font-size: 12px !important;
+			line-height: 12px !important;
+		}
+
+		&:hover::before {
+			background: darken($green,10%);
+		}
+
+		&:active {
+			outline: 0;
+		}
+
+		&:active::before {
+			background: $green;
+		}
+
+
+	}
+
+}
+
+.date-time {
+	background: lighten($gray,35%);
+	padding: 20px 0 20px 20px;
+	margin: 0 0 30px 0;
+	border-radius: 2px;
+
+	li {
+		width: 100%;
+		margin-bottom: 10px;
+		display: inline-block;
+
+		@media #{$desktop} {
+			float: left;
+			width: 165px;
+			margin: 0 20px 0 0;
+		}
+
+		// for chosen
+		li {
+			width: auto;
+			float: none;
+			display: block;
+		}
+
+		&.divider {
+			width: 35px;
+			padding: 25px 0 0 0;
+			color: $gray;
+
+			@media #{$desktop} {
+				text-align: center;
+			}
+
+		}
+
+	}
+
+	input[type='number']::-webkit-input-placeholder {
+		color: lighten($primary-color,50%);
+		padding-top: 2px;
+	}
+
+	input[type='number']::-moz-placeholder {
+		color: lighten($primary-color,50%);
+		padding-top: 2px;
+	}
+
+
+	input {
+		width: 89%;
+		padding: 5px 9px;
+		font-size: 13px;
+		line-height: 13px;
+
+		@media #{$desktop} {
+			width: 147px;
+		}
+
+	}
+
+	select {
+		float: none;
+		width: 90%;
+
+		@media #{$desktop} {
+			width: 165px;
+		}
+
+	}
+
+}
+
+.add-date {
+	display: block;
+	margin: 25px 0;
+}

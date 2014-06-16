@@ -1,0 +1,147 @@
+.profile {
+	width: 100%; 
+	margin: 0 auto $content-padding auto;
+	text-align: center;
+
+	@media #{$desktop} {
+		width: 520px;
+	}
+
+	.profile-photo { 
+		width: 245px;
+		position: relative;
+		margin: 0 auto;
+
+		.sprites-bookmarked {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 15px;
+
+			.fa-star {
+				font-size: 25px;
+				color: #fff;
+				display: inline-block;
+				margin: 30px auto 0 auto;
+			} 
+
+		}
+
+		img {
+			@include photo-style();
+			margin-bottom: $content-padding;
+		}
+
+	}
+
+	h1 {
+		font-size: 28px;
+		line-height: 28px;
+		font-weight: bold;
+		color: #2c3132;
+		margin-bottom: 35px;
+
+		@media #{$desktop} {
+			font-size: 48px;
+			line-height: 48px;
+			margin-bottom: 90px;
+		}
+
+	}
+
+	h2 {
+		font-size: 18px;
+		line-height: 18px;
+		margin-bottom: 15px;
+		text-align: left;
+
+		@media #{$desktop} {
+			font-size: 28px;
+			line-height: 28px;
+		}
+
+	}
+
+	ul.actions {
+		margin: 0 auto;
+
+		@media #{$desktop} {
+			margin: 0 0 $content-padding 0;
+		}
+
+		li {
+			display: inline;
+			margin: 0 10px 0 0;
+
+			@media #{$desktop} {
+				margin: 0 20px;
+			}
+
+		}
+
+	}
+
+	.button, .button-alt {
+		margin-bottom: 45px;
+	}
+
+	h3 {
+		font-size: 28px;
+		line-height: 28px;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+
+	p {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.kids {
+		width: 72%;
+		margin: $content-padding auto 25px auto;
+
+		a {
+			color: $primary-color;
+		}
+
+		li {
+			width: 50%;
+			float: left;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		.kid {
+			width: 64px;
+			height: 64px;
+			@include border-radius(64px);
+			text-align: center;
+
+			@media #{$desktop} {
+				margin-right: 15px;
+				float: left;
+			}
+
+			.fa-user {
+				font-size: 54px;
+				line-height: 85px;
+			}
+
+		}
+
+		strong {
+			display: block;
+			line-height: 64px;
+			font-size: 22px;
+
+			@media #{$desktop} {
+				float: left;
+				display: inline-block;
+			}
+
+		}
+
+	}
+
+}

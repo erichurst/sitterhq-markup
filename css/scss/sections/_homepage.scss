@@ -1,0 +1,70 @@
+.promo-wrap {
+	margin: 0 auto;
+}
+
+.promo {
+	width: 100%;
+	position: relative;
+	margin: 0 auto 20px auto;
+	text-align: center;
+
+	img {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		@include photo-style;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: bold;
+		color: #fff;
+		position: absolute;
+		top: 23px;
+		left: 23px;
+	}
+
+	@media #{$tablet-wide} {
+		width: 50%;
+		float: left;
+		display: inline-block;
+
+		img {
+			margin: 0 auto;
+			width: 90%;
+		}
+
+		h3 {
+			font-size: 14px;
+			line-height: 14px;
+			top: 23px;
+			left: 12%;
+		}
+
+	}
+
+	@media #{$desktop} {
+		width: 312px;
+		float: left;
+		display: inline-block;
+
+		&.padded {
+			margin-left: 42px;
+			margin-right: 42px;
+		}
+
+		img {
+			width: 312px;
+		}
+
+		h3 {
+			font-size: 16px;
+			line-height: 16px;
+			top: 23px;
+			left: 23px;
+		}
+
+	}
+
+}

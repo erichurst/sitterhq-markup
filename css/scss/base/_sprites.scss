@@ -1,0 +1,3 @@
+$sprites-sprite-dimensions: true;
+@import "sprites/*.png";
+@include all-sprites-sprites(); 
