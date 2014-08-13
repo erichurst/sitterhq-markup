@@ -10,6 +10,7 @@
 			<h2>Search for Jobs</h2>
 			<form>
 				<input type="number" class="search" value="" placeholder="Enter Zip Code">
+				<a href="" class="fa fa-search"></a>
 			</form>
 		</div>
 	</div>
@@ -40,7 +41,7 @@
 	</div>
 
 	<div class="job">
-		<h2>Nanny 4 days</h2>
+		<h2>Nanny 4 days Nanny 4 days Nanny 4 days Nanny 4 days Nanny 4 days</h2>
 		<ul class="kids clearfix">
 			<li class="clearfix"><span class="kid girl"><i class="fa fa-user"></i></span> <strong>Girl, 8</strong></li>
 			<li class="clearfix"><span class="kid boy"><i class="fa fa-user"></i></span> <strong>Boy, 8</strong></li>

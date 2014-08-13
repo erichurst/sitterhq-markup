@@ -480,14 +480,14 @@ hr {
     .sitter-list li img {
       width: 100%;
       border: 1px solid #fff;
-      -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -ms-border-radius: 1px;
-      -o-border-radius: 1px;
-      border-radius: 1px; }
+      -webkit-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -moz-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px; }
     .sitter-list li h2 {
       color: #fff;
       font-size: 13px;
@@ -749,7 +749,24 @@ input.search {
     top: -75px;
     left: 0; }
   .masthead-main .find-jobs {
+    position: relative;
     margin: 100px auto 0 auto; }
+    .masthead-main .find-jobs .fa-search {
+      position: absolute;
+      top: 41px;
+      right: 22px;
+      font-size: 28px;
+      line-height: 28px;
+      color: #9b9b9b; }
+      @media screen and (min-width: 590px) {
+        .masthead-main .find-jobs .fa-search {
+          right: 36px; } }
+      @media screen and (min-width: 1064px) {
+        .masthead-main .find-jobs .fa-search {
+          top: 66px;
+          right: 106px; } }
+      .masthead-main .find-jobs .fa-search:hover {
+        color: #686868; }
     @media screen and (min-width: 1064px) {
       .masthead-main .find-jobs {
         margin: 100px 0 0 100px; } }
@@ -828,7 +845,7 @@ input.search {
         float: left; } }
   .job h2 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 32px;
     margin: 0 0 15px 20px; }
   .job p {
     font-size: 14px;
@@ -960,14 +977,14 @@ input.search {
         margin: 30px auto 0 auto; }
     .profile .profile-photo img {
       border: 1px solid #fff;
-      -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -ms-border-radius: 1px;
-      -o-border-radius: 1px;
-      border-radius: 1px;
+      -webkit-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -moz-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
       margin-bottom: 35px; }
   .profile h1 {
     font-size: 28px;
@@ -1058,14 +1075,14 @@ input.search {
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid #fff;
-    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
-    border-radius: 1px; }
+    -webkit-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+    -moz-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+    box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px; }
   .promo h3 {
     font-size: 16px;
     line-height: 16px;
@@ -1122,14 +1139,14 @@ input.search {
       text-align: left; }
     .sb-left .user img {
       border: 1px solid #fff;
-      -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -ms-border-radius: 1px;
-      -o-border-radius: 1px;
-      border-radius: 1px;
+      -webkit-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -moz-box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      box-shadow: 3px 3px 0 rgba(221, 221, 221, 0.5);
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
       margin-right: 25px; }
     .sb-left .user h2 {
       width: 140px;

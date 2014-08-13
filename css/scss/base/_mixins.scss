@@ -19,8 +19,8 @@
 
 @mixin photo-style {
 	border: 1px solid #fff;
-	@include box-shadow(1px 1px 5px rgba(#000,.2));
-	@include border-radius(1px);
+	@include box-shadow(3px 3px 0 rgba(#ddd,.5));
+	@include border-radius(2px);
 }
 
 @mixin button($color: #fff, $background: $green) {

@@ -10,6 +10,7 @@
 				<h2>Search for Sitters</h2>
 				<form>
 					<input type="number" class="search" value="" placeholder="Enter Zip Code">
+					<a href="" class="fa fa-search"></a>
 				</form>
 			</div>
 		</div>
